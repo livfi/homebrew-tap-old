@@ -1,4 +1,5 @@
 # Livfi Tap
+A personal Homebrew tap for distributing Homebrew formulas
 
 ## How do I install these formulae?
 
