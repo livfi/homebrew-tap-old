@@ -6,13 +6,13 @@ class FinderTags < Formula
   license "MIT"
   head "https://github.com/livfi/finder-tags.git", branch: "main"
 
-  depends_on macos: :sonoma
   depends_on xcode: ["15.0.1", :build]
+  depends_on macos: :sonoma
   uses_from_macos "swift"
 
   def install
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "swift", "build",  "-c", "release"
+    system "swift", "build", "-c", "release"
     bin.install ".build/release/tag"
   end
 
