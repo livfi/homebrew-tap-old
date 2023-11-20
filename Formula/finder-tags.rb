@@ -7,7 +7,7 @@ class FinderTags < Formula
   head "https://github.com/livfi/finder-tags.git", branch: "main"
 
   depends_on xcode: ["15.0.1", :build]
-  depends_on macos: :sonoma
+  depends_on :macos
   uses_from_macos "swift"
 
   def install
