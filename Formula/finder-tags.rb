@@ -6,7 +6,7 @@ class FinderTags < Formula
   license "MIT"
   head "https://github.com/livfi/finder-tags.git", branch: "main"
 
-  depends_on xcode: ["15.0.1", :build]
+  depends_on xcode: ["14.0", :build]
   depends_on :macos
   uses_from_macos "swift"
 
