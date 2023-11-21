@@ -7,6 +7,11 @@ class FinderTags < Formula
   license "MIT"
   head "https://github.com/livfi/finder-tags.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/livfi/homebrew-tap/releases/download/finder-tags-0.1.1"
+    sha256 cellar: :any_skip_relocation, ventura: "b9cce26c1654aaa733c421e9636558afb2f7739b83c97ab3d54ffd0b9a53b66a"
+  end
+
   pour_bottle? only_if: :clt_installed
 
   depends_on xcode: ["14.0", :build]
