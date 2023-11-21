@@ -2,7 +2,7 @@ class FinderTags < Formula
   desc "Command-line tool for managing finder tags on macOS"
   homepage "https://github.com/livfi/finder-tags"
   url "https://github.com/livfi/finder-tags/archive/refs/tags/0.1.1.tar.gz"
-  sha256 "12fe515da53cbc7e7e225dfdf8f1a264d3494ba1d8cf8807106914f08a3fc44d"
+  sha256 "cc49db104c0dd65cbd69aa6c1d9143960bcb45e085affd5bcc187f6c0b1040d6"
   license "MIT"
   head "https://github.com/livfi/finder-tags.git", branch: "main"
 
