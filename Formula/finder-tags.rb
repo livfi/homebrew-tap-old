@@ -12,7 +12,7 @@ class FinderTags < Formula
 
   def install
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "swift", "build", "-c", "release"
+    system "swift", "build", "--disable-sandbox", "-c", "release"
     bin.install ".build/release/tag"
   end
 
