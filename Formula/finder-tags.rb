@@ -1,10 +1,13 @@
 class FinderTags < Formula
   desc "Command-line tool for managing finder tags on macOS"
   homepage "https://github.com/livfi/finder-tags"
-  url "https://github.com/livfi/finder-tags/archive/refs/tags/0.1.1.tar.gz"
-  sha256 "cc49db104c0dd65cbd69aa6c1d9143960bcb45e085affd5bcc187f6c0b1040d6"
+  url "https://github.com/livfi/finder-tags.git",
+    tag:      "0.1.1",
+    revision: "c3a6b83f9256dbca341e93b0feef3235102d7270"
   license "MIT"
   head "https://github.com/livfi/finder-tags.git", branch: "main"
+
+  pour_bottle? only_if: :clt_installed
 
   depends_on xcode: ["14.0", :build]
   depends_on :macos
